@@ -56,8 +56,8 @@
             <surface>
                 <friction>
                     <ode>
-                        <mu>2.0</mu>  <!-- Increase primary friction -->
-                        <mu2>2.0</mu2>  <!-- Increase secondary friction -->
+                        <mu>50</mu>  <!-- Increase primary friction -->
+                        <mu2>50</mu2>  <!-- Increase secondary friction -->
                     </ode>
                 </friction>
                 <contact>
@@ -94,8 +94,8 @@
             <surface>
                 <friction>
                     <ode>
-                        <mu>2.0</mu>  <!-- Increase primary friction -->
-                        <mu2>2.0</mu2>  <!-- Increase secondary friction -->
+                        <mu>50</mu>  <!-- Increase primary friction -->
+                        <mu2>50</mu2>  <!-- Increase secondary friction -->
                     </ode>
                 </friction>
                 <contact>
@@ -132,7 +132,7 @@
         <origin xyz="-0.075 0 0" rpy="0 0 0"/>
         <axis xyz="1 0 0"/>
         <limit effort="100" lower="0" upper="0.1" velocity="0.1"/>
-        <dynamics damping="20.0" friction="2.0"/>
+        <dynamics damping="20.0" friction="1.0"/>
     </joint>
 
     <joint name="gripper_finger_right_joint" type="prismatic">
@@ -141,7 +141,7 @@
         <origin xyz="0.075 0 0" rpy="0 0 0"/>
         <axis xyz="1 0 0"/>
         <limit effort="100" lower="-0.1" upper="0" velocity="0.1"/>
-        <dynamics damping="20.0" friction="2.0"/>
+        <dynamics damping="20.0" friction="1.0"/>
     </joint>
 
     <!-- Gazebo Simulation for Gripper -->
